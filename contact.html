@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Details</title>
+</head>
+<body>
+    <h3>Contact Details of Mr. Sahil Verma</h3>
+    <p>Gmail : sahilashokverma@gmail.com</p>
+    <p>LinkedIn : <a href="https://www.linkedin.com/in/sahil-verma-00307a204/">Sahil Verma</a></p>
+    <p>Mobile : 7697074048</p>
+    <hr size="2" noshade="">
+    <h3>Enter your details:</h3>
+    <table>
+        <form action="mailto:sahilashokverma@gmail.com" method="post" enctype="text/plain">
+            <tr>
+                <td>
+                    <label for="email">Email : </label>
+                </td>
+                <td>
+                    <input type="email" name="email">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="mobile">Mobile : </label>
+                </td>
+                <td>
+                    <input type="number" name="mobile">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="gender">gender : </label>
+                </td>
+                <td>
+                    <label for="male">male</label><input type="radio" name ="gender" checked>
+                    <label for="female">female</label><input type="radio" name ="gender">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="file">file</label>
+                </td>
+                <td>
+                    <input type="file" name="file">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="urgent">urgent</label>
+                </td>
+                <td>
+                    <input type="range" min="0" max="10" name="urgency-range">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="ice-cream-choice">choose your flavour</label>
+                </td>
+                <td>
+                    <input type="list" id="ice-cream-choice" name="ice-cream-choice">
+                    <datalist id = "ice-cream-flavors">
+                    <!-- <select name="ice-creame-flavors" id=""> -->
+                        <option value="Chocolate"></option>
+                        <option value="ButterSchoch"></option>
+                        <option value="Vanilla"></option>
+                        <option value="Strawberry"></option>
+                    <!-- </select> -->
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="toping">select toping</label>
+                </td>
+                <td>
+                    <select name="toping" name="toping" id="">
+                        <option value="Choco Crunch">Choco Crunch</option>
+                        <option value="Choco Chips">Choco Chips</option>
+                        <option value="Choco Walnuts">Choco Walnuts</option>
+                    </select>
+                </td>
+            </tr>
+            <tr >
+                <td>
+                    <fieldset name="">
+                        <legend>Choose Your Fav Anime</legend>
+
+                        <input type="radio" name="Anime" id="Naruto">
+                        <label for="Naruto">Naruto</label>
+                        
+                        <input type="radio" name="Anime" id="One Punch Man">
+                        <label for="One-Punch-Man">One Punch Man</label>
+                        
+                        <input type="radio" name="Anime" id="Death Note">
+                        <label for="Death-Note">Death Note</label>
+                        
+                        <input type="radio" name="Anime" id="Attack On Titan">
+                        <label for="Attack On Titan">Attack On Titan</label>
+                        
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Write something about yourself</label>
+                </td>
+                <td>
+                    <textarea name="textarea" id="" cols="50" rows="3">Write something</textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Done">
+                </td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>
